@@ -223,6 +223,46 @@ body {
 
 }
 
+/* NIT Silchar Logo - FINAL FIX */
+.nit-logo {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+
+    /* 🚫 Disable clicks everywhere in this layer */
+    pointer-events: none;
+}
+
+/* ✅ Enable clicks ONLY on the actual logo */
+.nit-logo a,
+.nit-logo img {
+    pointer-events: auto;
+}
+
+.nit-logo a {
+    display: inline-block;
+}
+
+.nit-logo img {
+    height: 72px;
+    width: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.nit-logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .nit-logo img {
+        height: 54px;
+    }
+}
+
 
 
 
